@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+    <!-- Begin: Header -->
+    <header class="header">
+      <div class="grid wide">
+        <nav class="nav hide-on-tablet-mobile">
+          <ul class="nav__list">
+            <li class="nav__items nav__items-link--border-right"><a href="" class="nav__items-link">Kênh người bán</a></li>
+            <li class="nav__items nav__items-link--border-right"><a href="" class="nav__items-link">Trở thành người bán Shopee</a></li>
+            <li class="nav__items nav__items-link--border-right nav__items-qr">
+              <a href="" class="nav__items-link">Tải ứng dụng</a>
+              
+              <!-- QR-Scan -->
+              <div class="header__qr">
+                <a href="https://shopee.vn/web">
+                  <img src="./assets/img/qr_code.png" alt="QR Code" class="header__qr-scan">
+                  <div class="header__qr-apps">
+                    <img src="./assets/img/app_store.png" alt="app store" class="header__qr-apps-img">
+                    <img src="./assets/img/google_play.png" alt="google play" class="header__qr-apps-img">
+                    <img src="./assets/img/app_gallery.png" alt="app gallery" class="header__qr-apps-img header__qr-apps-img--app-gallery">
+                </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav__items nav__items--none-cursor">Kết nối</li>
+            <div class="nav__social-list">
+              <a title="Kết nối Facebook!" href="https://www.facebook.com/" class="nav__icon"><i class="fab fa-facebook"></i></a>
+              <a title="Kết nối Instagram!" href="https://www.instagram.com/" class="nav__icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__items nav__items-notify">
+              <a href="">
+                <span><i class="far fa-bell nav__icon"></i>Thông Báo</span>
+              </a>
+
+              <!-- Notification -->
+              <div class="notify-board">
+                <div>
+                  <img src="./assets/img/notify-img.png" alt="" class="notify-board__img">
+                  <p class="notify-board__notice">Đăng nhập để xem thông báo</p>
+                </div>
+                <div>
+                  <ul class="notify-board__login">
+                    <li class="notify-board__login-btn"><a href="">Đăng ký</a></li>
+                    <li class="notify-board__login-btn"><a href="">Đăng nhập</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav__items"><a href="" class="nav__items-link"><i class="far fa-question-circle nav__icon"></i>Hỗ trợ</a></li>
+            <li class="nav__items nav__items-language">
+              <a href="">
+                <span><i class="fas fa-globe nav__icon"></i>Tiếng Việt</span>
+                <i class="fas fa-chevron-down nav__icon"></i>
+              </a>
+
+              <!-- Language: setting -->
+              <div class="language-setting">
+                <ul>
+                  <li>Tiếng Việt</li>
+                  <li>English</li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="nav__items nav__items-link--border-right"><a href="" class="nav__items-link">Đăng ký </a></li>
+            <li class="nav__items"><a href="" class="nav__items-link">Đăng nhập</a></li> -->
+            <li class="nav__items nav__items-user">
+              <a href="" class="nav__items-user-link">
+                <img src="./assets/img/dieulinh-img.jpg" alt="" class="nav__items-user-img">
+                <span class="nav__items-user-name">namdeft</span>
+              </a>
+
+              <!-- User info setting -->
+              <div class="user-setting">
+                <ul>
+                  <li><a href="" class="user-setting__link">Tài khoản của tôi</a></li>
+                  <li><a href="" class="user-setting__link">Đơn mua</a></li>
+                  <li><a href="" class="user-setting__link" style="border-top: 1px solid rgba(0, 0, 0, 0.1);">Đăng xuất</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header-search -->
+        <div class="header-search">
+          <!-- Mobile search -->
+          <label for="mobile-search-checkbox">
+            <i class="fas fa-search mobile-search__logo"></i>
+          </label>
+
+          <input type="checkbox" hidden id="mobile-search-checkbox" class="search-checkbox">
+          
+          <div class="header-search__logo hide-on-tablet">
+            <a href="" class="shopee-logo">
+              <img src="./assets/img/shopee_logo.png" alt="" class="shopee-logo__img">
+            </a>
+          </div>
+
+          <!--Header search  -->
+          <div class="main-search">
+            <div class="main-search__wrap">
+              <input type="text" placeholder="Tìm trong shop này" class="main-search__input">
+
+              <!-- History search -->
+              <ul class="main-search__list">
+                <h3>Lịch sử tìm kiếm</h3>
+                <li class="main-search__list-item"><a href="">_linglinhlink_</a></li>
+                <li class="main-search__list-item"><a href="">_depdeftdeaf_</a></li>
+              </ul>
+            </div>
+
+            <div class="main-search__select">
+              <span class="main-search__select-label">Trong shop này</span>
+              <i class="fas fa-chevron-down main-search__select-icon"></i>
+              <ul class="main-search__option">
+                <li class="main-search__item">
+                  <span>Trong shop này</span> 
+                  <i class="fas fa-check"></i>
+                </li>
+                <li class="main-search__item">
+                  <span>Trong Shopee</span>
+                  <i class="fas fa-check"></i>
+                </li>
+              </ul>
+            </div>
+            <div >
+              <button class="main-search__btn">
+                <i class="fas fa-search main-search__btn-icon"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cart -->
+          <div class="main-cart">
+            <div>
+              <i class="fas fa-shopping-cart main-cart__logo"></i>
+              <div class="main-cart__notice">4</div>
+            </div>
+
+            <div class="main-cart__list">
+              <img src="./assets/img/empty-cart.png" alt="" class="list--empty__img">
+              <p class="list--empty__msg">Chưa có sản phẩm</p>
+
+              <h3>Sản phẩm mới thêm</h3>
+              <ul class="main-cart__list-items">
+                <li class="main-cart__items">
+                  <div class="main-cart__items-info">
+                    <img src="./assets/img/biogenic-img.jpg" alt="" class="main-cart__items-img">
+                    <div>
+                      <p style="font-weight: bold; text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap; max-width: 20rem;">Biogenic BHA Twins Skin For Professional – Toner Thanh Tẩy Tế Bào Chết, Giảm Mụn, Thông Thoáng Lỗ Chân Lông Travelsize</p>
+                      <p style="font-size: 1.2rem;">Phân loại hàng: Bạc</p>
+                    </div>
+                  </div>
+                  <div class="main-cart__items-price">
+                    <div>
+                      <span style="color: #c83922;">390.000đ</span>
+                      <span style="font-size: 1.2rem;">x</span>
+                      <span style="font-size: 1.2rem;">1</span>
+                    </div>
+                    <span class="main-cart__items-delete">Xoá</span>
+                  </div>
+                </li>
+                <li class="main-cart__items">
+                  <div class="main-cart__items-info">
+                    <img src="./assets/img/re1-img.jpg" alt="" class="main-cart__items-img">
+                    <div>
+                      <p style="font-weight: bold; text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap; max-width: 20rem;">Biogenic BHA Twins Skin For Professional – Toner Thanh Tẩy Tế Bào Chết, Giảm Mụn, Thông Thoáng Lỗ Chân Lông Travelsize</p>
+                      <p style="font-size: 1.2rem;">Phân loại hàng: Bạc</p>
+                    </div>
+                  </div>
+                  <div class="main-cart__items-price">
+                    <div>
+                      <span style="color: #c83922;">1.200.000đ</span>
+                      <span style="font-size: 1.2rem;">x</span>
+                      <span style="font-size: 1.2rem;">1</span>
+                    </div>
+                    <span class="main-cart__items-delete">Xoá</span>
+                  </div>
+                </li>
+                <li class="main-cart__items">
+                  <div class="main-cart__items-info">
+                    <img src="./assets/img/re0.5-img.jpg" alt="" class="main-cart__items-img">
+                    <div>
+                      <p style="font-weight: bold; text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap; max-width: 20rem;">Biogenic BHA Twins Skin For Professional – Toner Thanh Tẩy Tế Bào Chết, Giảm Mụn, Thông Thoáng Lỗ Chân Lông Travelsize</p>
+                      <p style="font-size: 1.2rem;">Phân loại hàng: Bạc</p>
+                    </div>
+                  </div>
+                  <div class="main-cart__items-price">
+                    <div>
+                      <span style="color: #c83922;">900.000đ</span>
+                      <span style="font-size: 1.2rem;">x</span>
+                      <span style="font-size: 1.2rem;">1</span>
+                    </div>
+                    <span class="main-cart__items-delete">Xoá</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="main-cart__list-footer">
+                <p>3 đã thêm vào giỏ hàng</p>
+                <button class="btn btn--primary">Xem giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header sort bar on mobile and tablet -->
+      <ul class="header-sort-bar">
+        <li class="header-sort-bar__item">
+          <a href="" class="header-sort-bar__link">Liên quan </a>
+        </li>
+        <li class="header-sort-bar__item header-sort-bar__item--active">
+          <a href="" class="header-sort-bar__link">Mới nhất</a>
+        </li>
+        <li class="header-sort-bar__item">
+          <a href="" class="header-sort-bar__link">Bán chạy</a>
+        </li>
+        <li class="header-sort-bar__item">
+          <a href="" class="header-sort-bar__link">Giá</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2 category hide-on-tablet-mobile">
+            <h3 class="category__heading"><i class="fas fa-list-ul"></i>Danh Mục</h3>
+            <ul class="category__list">
+              <li class="category__item category__item--active"><a href="" class="category__item-link">Chuột</a></li>
+              <li class="category__item"><a href="" class="category__item-link">Bàn phím</a></li>
+              <li class="category__item"><a href="" class="category__item-link">Tai nghe</a></li>
+              <li class="category__item"><a href="" class="category__item-link">Pad</a></li>
+            </ul>
+          </div>
+          <div class="col l-10" style="padding: 0 1rem;">
+            <div class="sort-bar">
+              <span class="sort-bar__label">Sắp xếp theo</span>
+
+              <div class="sort-bar__option">
+                <button class="option-btn btn option-btn--active">Phổ biến</button>
+                <button class="option-btn btn">Mới nhất</button>
+                <button class="option-btn btn">Bán chạy</button>
+                <div class="option-price">
+                  <span>Giá</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <ul class="option-price__list">
+                    <li class="option-price__list-item"><a href="" class="option-price__list-link">Giá: Thấp đến Cao</a></li>
+                    <li class="option-price__list-item"><a href="" class="option-price__list-link">Giá: Cao đến Thấp</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sort-bar__mini-controller-page">
+                <div class="mini-controller-page__state">
+                  <span class="mini-controller-page__state-current">1</span>
+                  /
+                  <span class="mini-controller-page__total">14</span>
+                </div>
+                <div class="mini-controller-page__btn-wrap">
+                  <button class="mini-controller-page__btn mini-controller-page__btn--disabled"><i class="fas fa-chevron-left"></i></button>
+                  <button class="mini-controller-page__btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile category -->
+            <div class="mobile-category">
+              <ul class="mobile-category__list">
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Màn hình 144hz & 240hz</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="">
+                  <div class="home-product">
+                    <div class="home-product__img">
+                      <img src="./assets/img/benq-img.jpg" alt="">
+                    </div>
+                    <div class="home-product__info-wrapper">
+                      <div class="home-product__title">
+                        <span>Màn hình máy tính BENQ ZOWIE XL2411⚡️Đẹp Như Mới⚡️Màn Gaming 24inch cũ FHD 144Hz, xoay ngang dọc cao thấp tùy ý, mới 95%</span>
+                      </div>
+                      <div class="home-product__sell">
+                        <div class="home-product__sell-price">
+                          <div class="home-product__sell-price-number home-product__sell-price-number--sell-off">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>5.160.000</span>
+                          </div>
+                          <div class="home-product__sell-price-number">
+                            <span style="font-size: 1rem;">₫</span>
+                            <span>3.900.000</span>
+                          </div>
+                        </div>
+                        <div class="home-product__sell-ship">
+                          <i class="fas fa-shipping-fast"></i>
+                        </div>
+                      </div>
+                      <div class="home-product__action">
+                        <div class="home-product__action-favourite home-product__action-favourite-liked">
+                          <i class="far fa-heart home-product__action-favourite-empty"></i>
+                          <i class="fas fa-heart home-product__action-favourite-fill"></i>
+                        </div>
+                        <div class="home-product__action-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span style="font-size: 1.2rem; margin-left: 0.5rem;">Đã bán 1k</span>
+                      </div>
+                      <div class="home-product__origin">
+                        <span>BenQ</span>
+                        <span>Hà Nội</span>
+                      </div>
+                      <div class="home-product__love">
+                        <i class="fas fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product__sell-off">
+                        <span>30%</span>
+                        <span style="color: var(--white-color);">GIẢM</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="controller-page">
+            <button class="controller-page__btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="controller-page__btn controller-page_btn--primary">1</button>
+            <button class="controller-page__btn">2</button>
+            <button class="controller-page__btn">3</button>
+            <button class="controller-page__btn">4</button>
+            <button class="controller-page__btn">5</button>
+            <button class="controller-page__btn controller-page_btn--disabled">...</button>
+            <button class="controller-page__btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2-4 c-12">
+            <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+            <ul class="customer-service__wrapper">
+              <li><a href="" class="customer-service__link">Trung tâm trợ giúp</a></li>
+              <li><a href="" class="customer-service__link">Shopee blog</a></li>
+              <li><a href="" class="customer-service__link">Shopee mail</a></li>
+              <li><a href="" class="customer-service__link">Hướng dẫn mua hàng</a></li>
+              <li><a href="" class="customer-service__link">Hướng đẫn bán hàng</a></li>
+            </ul>
+          </div>
+
+          <div class="col l-2-4 c-12">
+            <h3 class="footer-heading">Về Shopee</h3>
+            <ul class="customer-service__wrapper">
+              <li><a href="" class="customer-service__link">Giới thiệu về Shopee Việt Nam</a></li>
+              <li><a href="" class="customer-service__link">Tuyển dụng</a></li>
+              <li><a href="" class="customer-service__link">Điều khoản Shopee</a></li>
+              <li><a href="" class="customer-service__link">Chính sách bảo mật</a></li>
+              <li><a href="" class="customer-service__link">Chính hãng</a></li>
+            </ul>
+          </div>
+
+          <div class="col l-2-4 c-12">
+            <h3 class="footer-heading">Thanh toán</h3>
+            <ul class="payment__wrapper">
+              <li><img src="./assets/img/visa-img.png" alt="" class="payment-img"></li>
+              <li><img src="./assets/img/mastercard-img.png" alt="" class="payment-img"></li>
+              <li><img src="./assets/img/jcb-img.png" alt="" class="payment-img"></li>
+            </ul>
+          </div>
+
+          <div class="col l-2-4 c-12">
+            <h3 class="footer-heading">Theo dõi chúng tôi trên</h3>
+            <ul class="footer-social-list__wrapper">
+              <li>
+                <a href="" class="footer-social-list__link">
+                  <i class="fab fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer-social-list__link">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer-social-list__link">
+                  <i class="fab fa-linkedin"></i>
+                  <span>Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col l-2-4 c-12">
+            <h3 class="footer-heading">Tải ứng dụng Shopee</h3>
+            <a href="" class="footer-app__qr">
+              <img src="./assets/img/qr_code.png" alt="" class="footer-app__qr-img">
+              <div class="footer-app__wrapper">
+                <img src="./assets/img/app_store.png" alt="" class="footer-app__other-img">
+                <img src="./assets/img/google_play.png" alt="" class="footer-app__other-img">
+                <img src="./assets/img/app_gallery.png" alt="" class="footer-app__other-img">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__heading">© 2021 - Copyright by namdeft</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__body">
+      <div class="modal__inner">
+
+        <!-- Register form -->
+        <div class="auth-form">
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h3>Đăng ký</h3>
+              <p>Đăng nhập</p>
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="Email">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+              </div>
+            </div>
+            <div class="auth-form__policy">
+              <p>Bằng việc đăng ký, bạn đã đồng ý với Shopee về 
+                <a href="">Điều khoản dịch vụ</a> & 
+                <a href="">Chính sách bảo mật</a>
+              </p>
+            </div>
+            <div class="auth-form__btn">
+              <button class="btn" style="margin-right: 0.7rem">trở lại</button>
+              <button class="btn btn--primary">đăng ký</button>
+            </div>
+          </div>
+          <div class="auth-form__social">
+            <div class="auth-form__social-wrap">
+              <a href="" class="social-link social-link--facebook">
+                <i class="fab fa-facebook-square"></i>
+                <span>Kết nối với Facebook</span>
+              </a>
+              <a href="" class="social-link social-link--google">
+                <i class="fab fa-google"></i>
+                <span>Kết nối với Google</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Login form -->
+        <div class="auth-form">
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h3>Đăng nhập</h3>
+              <p>Đăng ký</p>
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+              </div>
+            </div>
+            <div class="auth-form__aside">
+              <div class="auth-form__support">
+                <a href="" class="auth-form__support-link auth-form__support-link--border-right" style="padding-right: 1.5rem;">Quên mật khẩu</a>
+              </div>
+              <div class="auth-form__support">
+                <a href="" class="auth-form__support-link" style="padding-left: 1.5rem;">Cần trợ giúp?</a>
+              </div>
+            </div>
+            <div class="auth-form__btn">
+              <button class="btn" style="margin-right: 0.7rem">trở lại</button>
+              <button class="btn btn--primary">đăng nhập</button>
+            </div>
+          </div>
+          <div class="auth-form__social">
+            <div class="auth-form__social-wrap">
+              <a href="" class="social-link social-link--facebook">
+                <i class="fab fa-facebook-square"></i>
+                <span>Kết nối với Facebook</span>
+              </a>
+              <a href="" class="social-link social-link--google">
+                <i class="fab fa-google"></i>
+                <span>Kết nối với Google</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
